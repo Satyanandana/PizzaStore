@@ -32,8 +32,8 @@ if ($action == 'student_welcome') {
         $order_id = get_order_id()+1;
         $status=1;
     
-    if ($size_id == NULL || $size_id == FALSE||$room==NULL||$room==FALSE ) {
-        $error = "Invalid topping data. Check Name field and try again."."$size_id"." $topping_ids"."$room";
+    if ($size_id == NULL || $size_id == FALSE||$room==NULL||$room==FALSE||empty($_POST['pizza_topping']) ) {
+        $error = "Invalid topping data. Check Name field and try again.";
         include('../errors/error.php');
         } else { 
         

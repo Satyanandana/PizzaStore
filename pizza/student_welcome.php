@@ -6,6 +6,7 @@
     <section>
         <div>
         <h2>Available Sizes</h2>
+        <?php if($sizes->rowCount()>0):?>
        <table>
         <tr>
             <th>Size</th>
@@ -17,9 +18,15 @@
             </tr>
 <?php endforeach; ?>
     </table>
-        </div>
-        <div>
+        <?php else: ?>
+        <h3>No Sizes Available</h3>
+        <br>
+        <br>
+        <?php endif; ?>
+         </div>
+      <div>
          <h2>Available Toppings</h2>
+         <?php if($sizes->rowCount()>0):?>
        <table>
         <tr>
             <th>Topping</th>
@@ -32,11 +39,18 @@
             </tr>
 <?php endforeach; ?>
     </table>
+         <?php else: ?>
+        <h3>No Toppings Available</h3>
+        <br>
+        <br>
+        <?php endif; ?>
         </div>
-    </section>
+    </section> 
+  
+    <section>
     <hr>
     <?php if(isset($_SESSION["room"])):?>
-    <section>
+    
     <form  action="index.php" method="post" id="add_product_form">
         <input type="hidden" name="action" value="select_room">
         <label for="room">Room No:</label>
@@ -106,8 +120,9 @@
         <?php endif; ?>
         <br>
         <hr>
+        <?php endif; ?>
     </section> 
-    <?php endif; ?>
+    
     <section>
     <p class="last_paragraph">
         <a href="?action=order_pizza">Order Pizza</a>

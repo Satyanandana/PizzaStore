@@ -7,9 +7,8 @@ function initialize_db() {
     $query.='delete from pizza_size;';
     $query.='delete from toppings;';
     $query.='delete from pizza_sys_tab;';
-    $query.='insert into pizza_sys_tab values (0, 1, 1, 1);';
-    $query.="insert into toppings values (1,1,'Pepperoni');";
-    $query.="insert into pizza_size values (1,1,'Small');";
+    $query.='insert into pizza_sys_tab values (0, 0, 0, 1);';
+    
     
     $statement = $db->prepare($query);
     $statement->execute();

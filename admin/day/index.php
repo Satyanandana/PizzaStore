@@ -13,11 +13,7 @@ if ($action == NULL) {
 
 if ($action == 'list_orders') {
     $current_day= current_day();
-    
     $todays_orders =  get_todays_orders($current_day);
-    
-   
-    
     include('order_list.php');
 } else if ($action == 'change_to_nextday') {
     $current_day=  current_day();
@@ -25,6 +21,5 @@ if ($action == 'list_orders') {
     change_to_finished($current_day);
     update_next_day($next_day);
     header("Location: .");
-    
-} 
+    } 
 ?>

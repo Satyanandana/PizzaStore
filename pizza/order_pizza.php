@@ -14,7 +14,7 @@
                     
          <label>Toppings:</label><br>
         <?php foreach ($toppings as $topping) : ?>
-         <input type="checkbox" name="pizza_topping[]"  value="<?php echo $topping['id'];?>" required="required" ><label><?php echo $topping['topping_name'];?> </label><br>
+         <input type="checkbox" name="pizza_topping[]"  value="<?php echo $topping['id'];?>"  ><label><?php echo $topping['topping_name'];?> </label><br>
         <?php endforeach; ?> <br>
                     
         <label for="room">Room No:</label>

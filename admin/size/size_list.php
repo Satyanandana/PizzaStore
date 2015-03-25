@@ -4,13 +4,13 @@
     <h1>PIZZA SIZES</h1>
 
     <!-- display a list of toppings: incomplete but should work -->
-    
+    <?php if($sizes->rowCount()>0): ?>
     <table>
         <tr>
             <th>Size</th>
             <th>Status</th>
-            <th>  Update Status</th>
-            <th>Delete Size</th>
+            <th>Update Status</th>
+<!--            <th>Delete Size</th>-->
 
         </tr>
 
@@ -35,7 +35,7 @@
                         <input type="submit" value="Update">
                     </form></td>
 
-                <td> <form action="index.php" method="post" id="delete_topping_form">
+<!--                <td> <form action="index.php" method="post" id="delete_topping_form">
 
                         <input type="hidden" name="action"
                                value="delete_size">
@@ -43,11 +43,15 @@
                                value="<?php echo $size['id']; ?>">
 
                         <input type="submit" value="Delete">
-                    </form></td>
+                    </form></td>-->
             </tr>
 <?php endforeach; ?>
     </table>
-      
+    <?php else: ?>
+        <h3>No Sizes.Please add sizes</h3>
+        <br>
+        <br>
+        <?php endif; ?>
  <?php include 'size_add.php'; ?>
  
     <hr>   

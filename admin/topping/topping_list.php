@@ -4,14 +4,14 @@
     <section>  
     <h1>Topping List</h1>
 
-    <!-- display a list of toppings: incomplete but should work -->
+  <?php if($toppings->rowCount()>0):?>  
     
     <table>
         <tr>
             <th>Topping</th>
             <th>Status</th>
             <th>  Update Status</th>
-            <th>Delete Topping</th>
+<!--            <th>Delete Topping</th>-->
 
         </tr>
 
@@ -36,7 +36,7 @@
                         <input type="submit" value="Update">
                     </form></td>
 
-                <td> <form action="index.php" method="post" id="delete_topping_form">
+<!--                <td> <form action="index.php" method="post" id="delete_topping_form">
 
                         <input type="hidden" name="action"
                                value="delete_topping">
@@ -44,10 +44,15 @@
                                value="<?php echo $topping['id']; ?>">
 
                         <input type="submit" value="Delete">
-                    </form></td>
+                    </form></td>-->
             </tr>
 <?php endforeach; ?>
     </table>
+    <?php else: ?>
+        <h3>No Topping.Please add toppings</h3>
+        <br>
+        <br>
+        <?php endif; ?>
     </section>    
 <hr>
  <?php include 'topping_add.php'; ?>

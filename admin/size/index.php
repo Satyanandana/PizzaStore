@@ -39,13 +39,11 @@ if ($action == 'size_list') {
         
     if ($id == NULL || $id == FALSE ) {
         $error = "Invalid product data. Check all fields and try again.";
-        include('../errors/error.php');
+        include('../../errors/error.php');
     } else { 
         
         delete_size($id);
-//        $current_size_id =get_size_id();
-//        $size_id=$current_size_id - 1;
-//        update_size_id($size_id);
+
         header("Location: .");
     }
     
@@ -58,7 +56,7 @@ elseif ($action=='update_size_status') {
     
     if ($id == NULL || $id == FALSE ) {
         $error = "Invalid product data. Check all fields and try again.";
-        include('../errors/error.php');
+        include('../../errors/error.php');
     } else { 
         update_size_status($id,$s_status);
         header("Location: .");
