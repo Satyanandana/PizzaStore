@@ -1,0 +1,10 @@
+README for pizza1_setup
+Hopefully all the directories and filenames you need show up in 
+this setup.  If not, please email me about it.
+
+However the file contents are largely just copies of related
+files from ch05_guitar_shop, so you need to rewrite them.
+
+Please make sure you can run the project on topcat, because
+that's where the grader will run it.  See database.php for
+code that lets you run on topcat.

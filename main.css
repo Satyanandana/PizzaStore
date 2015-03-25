@@ -1,0 +1,252 @@
+/* the styles for the HTML elements */
+html {
+    //background-color: rgb(192, 192, 192);
+    background-image: url("images/html-back_1.jpg");
+    background-attachment: fixed;
+    
+}
+body {
+    font-family: Papyrus,Goudy Old Style;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 2em;
+    background-color: rgba(45, 43, 43, 0.4);
+   // border: 1px solid black;
+}
+header {
+      border-bottom: 2px solid whitesmoke;
+  padding: .5em 0;
+  height: 125px;
+}
+header img {
+   width: 112px;
+  margin-left: 45px;
+  float: left;
+  transform: rotate(266deg);
+}
+header h1 {
+  color: whitesmoke;
+  font-family: Papyrus,Goudy Old Style;
+  margin-top: 98px;
+  margin-left: 3px;
+  position: absolute;
+}
+main {
+  float: left;
+  /* margin-left: 160px; */
+  width: 780px;
+
+}
+p{
+ color: whitesmoke   
+}
+aside {
+  clear: both;
+  float: left;
+  width: 180px;
+  position: relative;
+  margin-top: 20px;
+}
+section {
+    float: left;
+    width: 780px;
+}
+div{
+    width: 300px;
+    float: left;
+    
+}
+label{
+    color: whitesmoke;
+    font-family: cursive;
+}
+footer {
+    clear: both;
+    border-top: 2px solid white;
+    padding: .5em 0;
+    height:50px;
+    
+    
+    width:960px;
+}
+footer p {
+    text-align: right;
+    font-size: 80%;
+    color:whitesmoke;
+}
+h1 {
+    font-size: 150%;
+    margin: .5em 0;
+}
+h2 {
+    font-size: 120%;
+    margin: .25em 0 .5em;
+}
+hr{
+      clear: both;
+}
+h1, h2,h4 {
+    color: whitesmoke;
+}
+h3 {
+    color: burlywood;
+}
+ul {
+    list-style-type: none;
+    
+    margin: 0;
+    padding-left: 0;
+    padding-bottom: 1em;
+}
+li {
+    padding-bottom: 0.5em;
+    text-decoration: none;
+}
+nav.vertical {
+    width: 150px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0,0,0,.15);
+  overflow: hidden;
+  text-align: center;
+}
+
+  nav.vertical > ul {
+    list-style-type: none;
+  }
+
+    nav.vertical > ul > li {
+      display: block;
+    }
+    
+nav.vertical > ul > li > a {
+	background-color: rgb(157, 34, 60);
+	background-image: -webkit-linear-gradient(135deg, rgb(53, 20, 46), rgb(115, 33, 50));
+	background-image: -moz-linear-gradient(135deg, rgb(53, 20, 46), rgb(115, 33, 50));
+	background-image: -o-linear-gradient(135deg, rgb(53, 20, 46), rgb(115, 33, 50));
+	background-image: linear-gradient(135deg, rgb(53, 20, 46), rgb(115, 33, 50));
+	border-bottom: 1px solid rgba(255,255,255,.1);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.1), 0 1px 1px rgba(0,0,0,.1);
+	color: rgb(255,255,255);
+	display: block;
+	font-size: .85rem;
+	font-weight: 500;
+	height: 50px;
+	letter-spacing: .5rem;
+	line-height: 50px;
+	text-shadow: 0 1px 1px rgba(0,0,0,.1);
+	text-transform: uppercase;
+	transition: all .1s ease;
+	text-decoration: none;
+}
+
+	nav.vertical > ul > li > a:hover {
+		background-color: rgb(114, 51, 98);
+		background-image: -webkit-linear-gradient(150deg, rgb(114, 51, 98), rgb(114, 51, 98));
+		background-image: -moz-linear-gradient(150deg, rgb(114, 51, 98), rgb(114, 51, 98));
+		background-image: -o-linear-gradient(150deg, rgb(114, 51, 98), rgb(114, 51, 98));
+		background-image: linear-gradient(150deg, rgb(114, 51, 98), rgb(114, 51, 98)); 
+		cursor: pointer;
+	}    
+  
+      
+    
+a {
+    color: rgb(239, 79, 103);
+    font-weight: bold;
+    text-decoration: activeborder;
+}
+a:hover {
+    color: rgb(93, 98, 190);
+}
+br {
+    clear: left;
+}
+table {
+    border: 1px solid rgb(145, 112, 112);
+    border-collapse: collapse;
+    margin-bottom: 1em;
+    
+}
+th {
+border: 1px solid rgb(145, 112, 112);
+padding: .2em .5em .2em .5em;
+text-align: center;
+color: white;
+background: linear-gradient(135deg, rgb(53, 20, 46), rgb(115, 33, 50));
+font-family: cursive;
+font-size: large;
+}
+td {
+border: 1px solid rgb(145, 112, 112);
+padding: .2em .5em .2em .5em;
+text-align: center;
+font-family: cursive;
+background: linear-gradient(to bottom, rgb(250, 250, 253) , rgb(217, 217, 249));
+}
+
+form {
+
+}
+/* the styles for classes */
+.right {
+    text-align: right;
+}
+.first_paragraph {
+    margin-top: 0;	
+}
+.last_paragraph {
+    margin-bottom: 2em;	
+}
+/* the styles for the div tags that divide the page into sections */
+#left_column {
+    float: left;
+    width: 150px;
+    text-align: center;
+}
+#right_column {
+    float: left;
+    padding-left: 1em;
+    padding-bottom: 2em;
+}
+/* Additional styles for the Product Manager application */
+#add_product_form {
+    margin: .5em 0;
+    
+}
+#add_product_form label {
+    width: 7em;
+    padding-right: 0em;
+    padding-bottom: .5em;
+    float: left;
+}
+#add_product_form input {
+    float: left;
+    margin-left: 5px;
+    border-radius: 3px;
+}
+#add_product_form input[text] {
+    width: 15em;
+    
+}
+#delete_topping_form{
+    display: inline;
+  }
+select {
+margin-left: 2px;
+height: 30px;
+border-radius: 3px;
+background: rgb(247, 247, 250);
+font-family: cursive;
+font-size: 1em;
+}
+  input{
+      border-radius: 3px;
+     
+      font-family: cursive;
+  }
+::-webkit-input-placeholder { color:black; font-size:14px;margin-left:2px; }
+
+
+ 
+  
+
