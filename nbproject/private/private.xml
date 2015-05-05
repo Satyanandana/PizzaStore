@@ -3,24 +3,6 @@
     <coverage xmlns="http://www.netbeans.org/ns/code-coverage/1" enabled="false"/>
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/xampp/htdocs/pizza1/errors/database_error.php</file>
-            <file>file:/C:/xampp/htdocs/pizza1/admin/topping/index.php</file>
-            <file>file:/C:/xampp/htdocs/pizza1/admin/size/size_list.php</file>
-            <file>file:/C:/xampp/htdocs/pizza1/admin/order/index.php</file>
-            <file>file:/C:/xampp/htdocs/pizza1/admin/order/order_list.php</file>
-            <file>file:/C:/xampp/htdocs/pizza1/admin/size/index.php</file>
-            <file>file:/C:/xampp/htdocs/pizza1/model/order_db.php</file>
-            <file>file:/C:/xampp/htdocs/pizza1/admin/topping/topping_add.php</file>
-            <file>file:/C:/xampp/htdocs/pizza1/model/database.php</file>
-            <file>file:/C:/xampp/htdocs/pizza1/model/initialize.php</file>
-            <file>file:/C:/xampp/htdocs/pizza1/view/header.php</file>
-            <file>file:/C:/xampp/htdocs/pizza1/admin/topping/topping_list.php</file>
-            <file>file:/C:/xampp/htdocs/pizza1/admin/day/index.php</file>
-            <file>file:/C:/xampp/htdocs/pizza1/errors/error.php</file>
-            <file>file:/C:/xampp/htdocs/pizza1/index.php</file>
-            <file>file:/C:/xampp/htdocs/pizza1/admin/index.php</file>
-            <file>file:/C:/xampp/htdocs/pizza1/admin/day/order_list.php</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

@@ -2,6 +2,7 @@
 require('../../model/database.php');
 require('../../model/order_db.php');
 require('../../model/size_db.php');
+require('../../model/initialize.php');
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
@@ -10,7 +11,12 @@ if ($action == NULL) {
         $action = 'list_orders';
     }
 }
-
+ if ($action == 'initialize_db') {
+        $message= 'Database Initialized'; 
+        initialize_db();
+        header("Location: ..");
+        }
+        
 if ($action == 'list_orders') {
     $current_day= current_day();
     $todays_orders =  get_todays_orders($current_day);

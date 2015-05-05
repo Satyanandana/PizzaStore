@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+<?php require_once '/../util/main.php'; ?>
 <html>
 <!-- the head section -->
 <head>
     <title>MY PIZZA SHOP</title>
-    <link rel="stylesheet" type="text/css" href="/pizza1/main.css">
+    <link rel="stylesheet" type="text/css"  href="<?php echo $app_path . 'main.css'?>">
       
 
 </head>
@@ -21,11 +22,9 @@
     
     <nav class="vertical">
         <ul>
-            <li><a href="/pizza1/admin/">Admin</a></li>
-            <li><a href="/pizza1/pizza/">Student</a></li>
+            <li><a href="<?php echo $app_path . 'admin/'?>">Admin</a></li>
+            <li><a href="<?php echo $app_path . 'pizza/'?>">Student</a></li>
         </ul>
     </nav>
- 
-    
-    
+        
 </aside>

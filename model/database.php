@@ -16,7 +16,8 @@ if (gethostname() === 'topcat') {
 }
 
 
- 
+
+
 try {
     $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
     $db = new PDO($dsn, $username, $password, $options);
@@ -25,7 +26,7 @@ try {
     $doc_root = $_SERVER['DOCUMENT_ROOT'];
     if ($username ==='varma50'){
       echo 'Bad username varma50: edit database.php';
-    set_include_path($doc_root . $location . '/pizza1/');
+    set_include_path($doc_root . $location . '/catia_training/');
     include('errors/database_error.php');
     exit();}
 }

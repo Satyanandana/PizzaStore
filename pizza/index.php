@@ -3,7 +3,9 @@ require('../model/database.php');
 require('../model/order_db.php');
 require('../model/topping_db.php');
 require('../model/size_db.php');
-session_start();
+require('../util/main.php');
+
+
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {

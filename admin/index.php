@@ -1,17 +1,3 @@
-<?php
-require('../model/database.php');
-require('../model/initialize.php');
-$action = filter_input(INPUT_POST, 'action');
- if ($action == 'initialize_db') {
-        $message= 'Database Initialized'; 
-        initialize_db();
-        }
-        else{
-            $message='';
-        }
-        
- ?>
-
 <?php include '../view/header.php'; ?> 
 <section>
 
@@ -22,10 +8,8 @@ $action = filter_input(INPUT_POST, 'action');
         <li><a href="day">Day Manager</a></li>
         <li><a href="order">Order Manager</a></li>
     </ul>
-    
-    <h2><?php echo $message; ?></h2>
-    
-    <form  action="index.php" method="post" id="add_product_form">
+       
+    <form  action="day/index.php" method="post" id="add_product_form">
         <input type="hidden" name="action" value="initialize_db">           
         <input type="submit" value="Initialize Database" />
         <br>
