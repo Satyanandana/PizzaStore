@@ -107,6 +107,26 @@ function get_todays_orders($day) {
     
              
 }
+
+function no_todays_orders($day) {
+    global $db;
+    try {
+    $query = 'SELECT count(*)as number FROM pizza_orders where day=:day ORDER BY status ASC';
+    $statement = $db->prepare($query);
+    $statement->bindValue(':day',$day);
+    $statement->execute();
+    $no = $statement->fetch();
+    $statement->closeCursor();
+    return $no['number'];
+    } catch (PDOException $e) {
+    $error_message = $e->getMessage(); 
+    echo 'ERROR!!!';
+    include('../../errors/database_error.php');
+    exit();
+    }
+    
+             
+}
 function current_day() {
     global $db;
     $query = 'SELECT * FROM pizza_sys_tab';    
@@ -178,13 +198,14 @@ function get_orders_toppings($order_id) {
 
 function get_order_id() {
     global $db;
-    $query = 'SELECT * FROM pizza_sys_tab';    
+    $query = 'SELECT MAX(id) as id FROM pizza_orders';    
     $statement = $db->prepare($query);
     $statement->execute();    
-    $toppingid = $statement->fetch();
-    $statement->closeCursor();    
-    $next_order_id = $toppingid['next_order_id'];
-    return $next_order_id;
+    $orderid = $statement->fetch();
+    $statement->closeCursor(); 
+    $id=$orderid['id'];
+    
+    return $id;
 }
 function update_order_id($order_id) {
     global $db;
@@ -195,18 +216,18 @@ function update_order_id($order_id) {
     $statement->closeCursor();    
 }
 
-function add_order($order_id,$room,$size_id,$current_day,$status) {
+function add_order($room,$size_id,$current_day,$status) {
     global $db;
     try {
-    $query = 'INSERT INTO `pizza_orders`(`id`, `room_number`, `size_id`, `day`, `status`) VALUES (:order_id,:room,:size_id,:current_day,:status)';
+    $query = 'INSERT INTO `pizza_orders`(`room_number`, `size_id`, `day`, `status`) VALUES (:room,:size_id,:current_day,:status)';
     $statement = $db->prepare($query);
-    $statement->bindValue(':order_id',$order_id);
     $statement->bindValue(':room',$room);
     $statement->bindValue(':size_id',$size_id);
     $statement->bindValue(':current_day',$current_day);
     $statement->bindValue(':status',$status);
     $statement->execute();
     $statement->closeCursor();
+    return get_order_id();
     } catch (PDOException $e) {
     $error_message = $e->getMessage(); 
     echo 'ERROR!!!';

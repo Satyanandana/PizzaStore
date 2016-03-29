@@ -1,5 +1,5 @@
-
-<?php include '../../view/header.php'; ?>
+<?php include 'util/main.php';?>
+<?php include 'view/header.php'; ?>
 <main>
     <h1>PIZZA SIZES</h1>
 
@@ -62,4 +62,4 @@
     </section>
     
 </main>
-<?php include '../../view/footer.php'; ?>
+<?php include 'view/footer.php'; ?>

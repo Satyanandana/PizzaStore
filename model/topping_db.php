@@ -31,11 +31,10 @@ function get_available_toppings() {
 
 
 
-function add_topping($topping_id,$t_status,$topping_name) {
+function add_topping($t_status,$topping_name) {
     global $db;
-    $query = 'INSERT INTO toppings(id,t_status,topping_name)VALUES(:id,:t_status,:topping_name)';
+    $query = 'INSERT INTO toppings(t_status,topping_name)VALUES(:t_status,:topping_name)';
     $statement = $db->prepare($query);
-    $statement->bindValue(':id', $topping_id);
     $statement->bindValue(':t_status', $t_status);
     $statement->bindValue(':topping_name', $topping_name);
     $statement->execute();

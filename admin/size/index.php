@@ -1,6 +1,7 @@
 <?php
-require('../../model/database.php');
-require('../../model/size_db.php');
+require('../../util/main.php');
+require('model/database.php');
+require('model/size_db.php');
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
@@ -20,17 +21,15 @@ if ($action == 'size_list') {
     }
     elseif ($action=='add_size') {
         $size_name = filter_input(INPUT_POST, 'size_name');
-        $current_size_id =get_size_id();
-        $size_id=$current_size_id + 1;
         $s_status=1;
     
     if ($size_name == NULL || $size_name == FALSE ) {
         $error = "Invalid topping data. Check Name field and try again.";
-        include('../../errors/error.php');
+        include('errors/error.php');
     } else { 
         
-        add_size($size_id,$s_status,$size_name);
-        update_size_id($size_id);
+        add_size($s_status,$size_name);
+        
         header("Location: .");
     }
     
@@ -39,7 +38,7 @@ if ($action == 'size_list') {
         
     if ($id == NULL || $id == FALSE ) {
         $error = "Invalid product data. Check all fields and try again.";
-        include('../../errors/error.php');
+        include('errors/error.php');
     } else { 
         
         delete_size($id);
@@ -56,7 +55,7 @@ elseif ($action=='update_size_status') {
     
     if ($id == NULL || $id == FALSE ) {
         $error = "Invalid product data. Check all fields and try again.";
-        include('../../errors/error.php');
+        include('errors/error.php');
     } else { 
         update_size_status($id,$s_status);
         header("Location: .");

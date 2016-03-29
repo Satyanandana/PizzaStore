@@ -1,4 +1,5 @@
-<?php include '../view/header.php'; ?> 
+<?php include '../util/main.php';?>
+<?php include 'view/header.php'; ?> 
 <section>
 
     <h1>Admin Menu</h1>
@@ -9,10 +10,10 @@
         <li><a href="order">Order Manager</a></li>
     </ul>
        
-    <form  action="day/index.php" method="post" id="add_product_form">
-        <input type="hidden" name="action" value="initialize_db">           
+    <form  action="order/index.php" method="post" id="add_product_form">
+        <input type="hidden" name="action" value="initial_db">           
         <input type="submit" value="Initialize Database" />
         <br>
     </form>
 </section>
-<?php include '../view/footer.php'; ?>
+<?php include 'view/footer.php'; ?>

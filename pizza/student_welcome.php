@@ -1,4 +1,5 @@
-<?php include '../view/header.php'; ?>
+<?php include '../util/main.php'; ?>
+<?php include 'view/header.php'; ?>
 
 <main>
     <h1> Student Service</h1>
@@ -129,4 +130,4 @@
     </p>
     </section>
 </main>
-<?php include '../view/footer.php'; ?>
+<?php include 'view/footer.php'; ?>

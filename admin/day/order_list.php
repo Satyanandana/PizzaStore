@@ -1,4 +1,5 @@
-<?php include '../../view/header.php'; ?>
+<?php include 'util/main.php'; ?>
+<?php include 'view/header.php'; ?>
 <main>
     <section>
         <h1>Today is day <?php echo $current_day; ?></h1>
@@ -61,4 +62,4 @@
         
    
 </main>
-<?php include '../../view/footer.php'; ?>
+<?php include 'view/footer.php'; ?>

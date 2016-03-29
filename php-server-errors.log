@@ -1,0 +1,78 @@
+[15-May-2015 19:53:20 Europe/Berlin] $orderID= 00 Bad Request
+[15-May-2015 19:53:20 Europe/Berlin] PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\pizza1\admin\day\index.php on line 126
+[15-May-2015 19:53:20 Europe/Berlin] $orderID= 
+[15-May-2015 19:53:20 Europe/Berlin] PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\pizza1\admin\day\index.php on line 127
+[15-May-2015 19:53:20 Europe/Berlin] $orderID= 
+[15-May-2015 19:53:20 Europe/Berlin] PHP Notice:  Undefined offset: 3 in C:\xampp\htdocs\pizza1\admin\day\index.php on line 128
+[15-May-2015 19:53:20 Europe/Berlin] $orderID= 
+[15-May-2015 19:53:20 Europe/Berlin] PHP Notice:  Undefined offset: 5 in C:\xampp\htdocs\pizza1\admin\day\index.php on line 129
+[15-May-2015 19:53:20 Europe/Berlin] $orderID= 
+[15-May-2015 19:53:20 Europe/Berlin] PHP Notice:  Undefined offset: 6 in C:\xampp\htdocs\pizza1\admin\day\index.php on line 130
+[15-May-2015 19:53:20 Europe/Berlin] $orderID= 
+[15-May-2015 19:53:20 Europe/Berlin] PHP Notice:  Undefined offset: 7 in C:\xampp\htdocs\pizza1\admin\day\index.php on line 131
+[15-May-2015 19:53:20 Europe/Berlin] $orderID= 
+[15-May-2015 19:53:20 Europe/Berlin] PHP Notice:  Undefined offset: 8 in C:\xampp\htdocs\pizza1\admin\day\index.php on line 132
+[15-May-2015 19:53:20 Europe/Berlin] $orderID= 
+[15-May-2015 20:00:09 Europe/Berlin] $orderID= http:
+[15-May-2015 20:00:09 Europe/Berlin] $orderID= 
+[15-May-2015 20:00:09 Europe/Berlin] $orderID= localhost
+[15-May-2015 20:00:09 Europe/Berlin] $orderID= proj2_server
+[15-May-2015 20:00:09 Europe/Berlin] $orderID= orders
+[15-May-2015 20:00:09 Europe/Berlin] $orderID= 1
+[15-May-2015 20:00:09 Europe/Berlin] PHP Notice:  Undefined offset: 7 in C:\xampp\htdocs\pizza1\admin\day\index.php on line 131
+[15-May-2015 20:00:09 Europe/Berlin] $orderID= 
+[15-May-2015 20:00:09 Europe/Berlin] PHP Notice:  Undefined offset: 8 in C:\xampp\htdocs\pizza1\admin\day\index.php on line 132
+[15-May-2015 20:00:09 Europe/Berlin] $orderID= 
+[15-May-2015 20:02:04 Europe/Berlin] $undelivered_id= 1
+[15-May-2015 20:02:04 Europe/Berlin] $flour_quantity= 2
+[15-May-2015 20:02:04 Europe/Berlin] $cheese_quantity= 3
+[15-May-2015 20:04:33 Europe/Berlin] $orderID= http:
+[15-May-2015 20:04:33 Europe/Berlin] $orderID= 
+[15-May-2015 20:04:33 Europe/Berlin] $orderID= localhost
+[15-May-2015 20:04:33 Europe/Berlin] $orderID= proj2_server
+[15-May-2015 20:04:33 Europe/Berlin] $orderID= orders
+[15-May-2015 20:04:33 Europe/Berlin] $orderID= 2
+[15-May-2015 20:04:33 Europe/Berlin] PHP Notice:  Undefined offset: 7 in C:\xampp\htdocs\pizza1\admin\day\index.php on line 131
+[15-May-2015 20:04:33 Europe/Berlin] $orderID= 
+[15-May-2015 20:04:33 Europe/Berlin] PHP Notice:  Undefined offset: 8 in C:\xampp\htdocs\pizza1\admin\day\index.php on line 132
+[15-May-2015 20:04:33 Europe/Berlin] $orderID= 
+[15-May-2015 20:05:05 Europe/Berlin] $undelivered_id= 2
+[15-May-2015 20:05:05 Europe/Berlin] $orderID= http:
+[15-May-2015 20:05:05 Europe/Berlin] $orderID= 
+[15-May-2015 20:05:06 Europe/Berlin] $orderID= localhost
+[15-May-2015 20:05:06 Europe/Berlin] $orderID= proj2_server
+[15-May-2015 20:05:06 Europe/Berlin] $orderID= orders
+[15-May-2015 20:05:06 Europe/Berlin] $orderID= 3
+[15-May-2015 20:05:06 Europe/Berlin] PHP Notice:  Undefined offset: 7 in C:\xampp\htdocs\pizza1\admin\day\index.php on line 131
+[15-May-2015 20:05:06 Europe/Berlin] $orderID= 
+[15-May-2015 20:05:06 Europe/Berlin] PHP Notice:  Undefined offset: 8 in C:\xampp\htdocs\pizza1\admin\day\index.php on line 132
+[15-May-2015 20:05:06 Europe/Berlin] $orderID= 
+[15-May-2015 20:06:05 Europe/Berlin] $undelivered_id= 2
+[15-May-2015 20:06:05 Europe/Berlin] $flour_quantity= 2
+[15-May-2015 20:06:05 Europe/Berlin] $cheese_quantity= 3
+[15-May-2015 20:06:05 Europe/Berlin] $undelivered_id= 3
+[15-May-2015 20:06:05 Europe/Berlin] $flour_quantity= 4
+[15-May-2015 20:06:05 Europe/Berlin] $cheese_quantity= 5
+[16-May-2015 00:10:08 Europe/Berlin] $orderID= http:
+[16-May-2015 00:10:08 Europe/Berlin] $orderID= 
+[16-May-2015 00:10:08 Europe/Berlin] $orderID= localhost
+[16-May-2015 00:10:08 Europe/Berlin] $orderID= proj2_server
+[16-May-2015 00:10:08 Europe/Berlin] $orderID= orders
+[16-May-2015 00:10:08 Europe/Berlin] $orderID= 1
+[16-May-2015 00:10:08 Europe/Berlin] PHP Notice:  Undefined offset: 7 in C:\xampp\htdocs\pizza1\admin\day\index.php on line 131
+[16-May-2015 00:10:08 Europe/Berlin] $orderID= 
+[16-May-2015 00:10:08 Europe/Berlin] PHP Notice:  Undefined offset: 8 in C:\xampp\htdocs\pizza1\admin\day\index.php on line 132
+[16-May-2015 00:10:08 Europe/Berlin] $orderID= 
+[16-May-2015 00:10:10 Europe/Berlin] $undelivered_id= 1
+[16-May-2015 00:10:10 Europe/Berlin] $flour_quantity= 2
+[16-May-2015 00:10:10 Europe/Berlin] $cheese_quantity= 3
+[16-May-2015 02:25:52 Europe/Berlin] $orderID= http:
+[16-May-2015 02:25:52 Europe/Berlin] $orderID= 
+[16-May-2015 02:25:52 Europe/Berlin] $orderID= localhost
+[16-May-2015 02:25:52 Europe/Berlin] $orderID= proj2_server
+[16-May-2015 02:25:52 Europe/Berlin] $orderID= orders
+[16-May-2015 02:25:52 Europe/Berlin] $orderID= 1
+[16-May-2015 02:25:52 Europe/Berlin] PHP Notice:  Undefined offset: 7 in C:\xampp\htdocs\pizza1\admin\day\index.php on line 131
+[16-May-2015 02:25:52 Europe/Berlin] $orderID= 
+[16-May-2015 02:25:52 Europe/Berlin] PHP Notice:  Undefined offset: 8 in C:\xampp\htdocs\pizza1\admin\day\index.php on line 132
+[16-May-2015 02:25:52 Europe/Berlin] $orderID= 

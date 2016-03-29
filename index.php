@@ -1,12 +1,13 @@
+<?php include 'util/main.php'; ?>
 <?php include 'view/header.php'; ?>
 <main>
     <h1>Menu</h1>
     <ul>
         <li>
-            <a href="admin">Shop Manager</a>
+            <a href="<?php echo $app_path . 'admin'?>">Shop Manager</a>
         </li>
         <li>
-            <a href="pizza">Pizza Shop for Students</a>
+            <a href="<?php echo $app_path . 'pizza'?>">Pizza Shop for Students</a>
         </li>
     </ul>
     <br>

@@ -1,8 +1,9 @@
-<?php   include '../view/header.php'; ?>
+<?php include '../util/main.php'; ?>
+<?php   include 'view/header.php'; ?>
 
 <main>
     <h1> Order Pizza</h1>
-    <form  action="index.php" method="post" id="add_product_form">
+    <form  action="index.php" method="get" id="add_product_form">
         <input type="hidden" name="action" value="add_order">
         <label>Pizza Size:</label><br>
         <?php foreach ($sizes as $size) : ?>
@@ -24,10 +25,12 @@
         <?php endfor; ?> 
         </select><br><br>
         
+        <label>Quantity:</label> <input type='number' name="n" min="1" max="250"><br><br>
+        
         <input type="submit" value="Order Pizza" /> <br><br>
         
         
     </form>
 
 </main>
-<?php  include '../view/footer.php'; ?>
+<?php  include 'view/footer.php'; ?>

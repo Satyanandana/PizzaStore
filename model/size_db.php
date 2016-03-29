@@ -46,11 +46,11 @@ function get_available_size() {
 
 
 
-function add_size($size_id,$s_status,$size_name) {
+function add_size($s_status,$size_name) {
     global $db;
-    $query = 'INSERT INTO pizza_size(id,s_status,size_name)VALUES(:id,:s_status,:size_name)';
+    $query = 'INSERT INTO pizza_size(s_status,size_name)VALUES(:s_status,:size_name)';
     $statement = $db->prepare($query);
-    $statement->bindValue(':id', $size_id);
+    
     $statement->bindValue(':s_status',$s_status);
     $statement->bindValue(':size_name',$size_name);
     $statement->execute();

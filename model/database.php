@@ -3,10 +3,10 @@
 // set up a mysql user named pizza_user on your own system
 if (gethostname() === 'topcat') {
     $username = 'varma50';  // mysql username on topcat is UNIX username
-    $password = lancer50;
+    $password = 'lancer50';
     $location = '/cs637/' . $username;  // where on server: student dir
    
-    $dsn = 'mysql:host=localhost;dbname='. $username . 'db';
+    $dsn = 'mysql:host=localhost;dbname='.$username.'db';
 
 } else {  // dev machine, can create pizzadb
     $dsn = 'mysql:host=localhost;dbname=pizzadb';
@@ -26,8 +26,7 @@ try {
     $doc_root = $_SERVER['DOCUMENT_ROOT'];
     if ($username ==='varma50'){
       echo 'Bad username varma50: edit database.php';
-    set_include_path($doc_root . $location . '/catia_training/');
-    include('errors/database_error.php');
+      include('errors/database_error.php');
     exit();}
 }
 ?>

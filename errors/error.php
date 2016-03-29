@@ -1,6 +1,8 @@
-<?php include '../view/header.php'; ?>
+
+<?php include '/util/main.php'; ?>
+<?php include 'view/header.php'; ?>
 <main>
     <h1>Error</h1>
     <p class="first_paragraph"><?php echo $error; ?></p>
 </main>
-<?php include '../view/footer.php'; ?>
+<?php include 'view/footer.php'; ?>

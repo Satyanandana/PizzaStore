@@ -1,5 +1,5 @@
-
-<?php include '../../view/header.php'; ?>
+<?php include 'util/main.php';?>
+<?php include 'view/header.php'; ?>
 <main>
     <section>  
     <h1>Topping List</h1>
@@ -64,4 +64,4 @@
     </section>
         
 </main>
-<?php include '../../view/footer.php'; ?>
+<?php include 'view/footer.php'; ?>
